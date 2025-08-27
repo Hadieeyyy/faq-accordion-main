@@ -1,0 +1,107 @@
+:root{
+    --white: hsl(0, 100%, 100%);
+    --purple100: hsl(275, 100%, 97%);
+    --purple600: hsl(292, 16%, 49%);
+    --purple950: hsl(292, 42%, 14%);
+    --worksans: "Work Sans", sans-serif;
+}
+
+p{
+    font-size: 16px;
+    font-family: var(--worksans);
+    margin: 0;
+}
+
+
+/* .worksans{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  } */
+
+
+
+/* ### Font
+
+- Family: [Work Sans](https://fonts.google.com/specimen/Work+Sans)
+- Weights: 400, 600, 700 */
+
+body{
+    background-color: var(--purple100);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center; 
+    align-items: center;
+}
+
+.banner{
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+}
+
+.card{
+    position: relative;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5rem;
+    border-radius: .7rem;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1{
+    font-family: var(--worksans);
+    font-weight: 700;
+    color: var(--purple950);
+    
+}
+
+.accordion-group{
+    
+    border-bottom: 1px solid var(--purple100);
+    width: 32rem;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion-heading {
+    color: var(--purple950);
+    cursor: pointer;
+    padding: 1.5rem 0rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    background-color: var(--white);
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion-heading:hover {
+    color: var(--purple600);
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 1rem;
+    background-color: var(--white);
+    display: none;
+    overflow: hidden;
+  }
+
+  .btnntext{
+    font-family: var(--worksans);
+    font-weight: 600;
+    width: 32rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
