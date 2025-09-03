@@ -64,10 +64,13 @@ h1{
     
 }
 
-.accordion-group{
-    
-    border-bottom: 1px solid var(--purple100);
+.accordion-group, .last{
     width: 32rem;
+    border-bottom: 1px solid var(--purple100);
+}
+
+.last{
+  border-bottom: 1px solid var(--white);
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -92,7 +95,7 @@ h1{
   .panel {
     padding: 0 1rem;
     background-color: var(--white);
-    display: none;
+    max-height: 0;
     overflow: hidden;
   }
 
